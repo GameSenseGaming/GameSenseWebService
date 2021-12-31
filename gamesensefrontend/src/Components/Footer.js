@@ -1,5 +1,5 @@
 import React from 'react';
-import "./Footer.css";
+import "../style/componentsStyle/Footer.css";
 
 const Footer = () => {
     return(
@@ -14,23 +14,12 @@ const Footer = () => {
                                 <li><a href="https://github.com/ThomasCardin/GameSenseBot">GithubRepo/GamesenseBot</a></li>
                                 <li><a href="https://github.com/ThomasCardin/GameSenseBot">Code of conduct</a></li>
                                 <li><a href="https://github.com/ThomasCardin/GameSenseBot">Download GSG Bot</a></li>
-                                
-                                
-                               
                          </ul>
                 </div>
-            
-            </div>
-            
-
-            
-        </div> 
-        
-        
+            </div>      
+        </div>      
     </div>
-    
-    )
-    
+    )   
 }
 
 export default Footer;
