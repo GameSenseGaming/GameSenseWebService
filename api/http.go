@@ -7,22 +7,16 @@ import (
 
 func HttpGet(url string) []byte {
 	request, error := http.NewRequest("GET", url, nil)
-	if error != nil {
-		panic(error)
-	}
+	ErrorHandler(error)
 	request.Header.Add("content-type", "application/json")
 
 	client := &http.Client{}
 	reponse, error := client.Do(request)
-	if error != nil {
-		panic(error)
-	}
+	ErrorHandler(error)
 	defer reponse.Body.Close()
 
 	data, error := ioutil.ReadAll(reponse.Body)
-	if error != nil {
-		panic(error)
-	}
+	ErrorHandler(error)
 
 	return data
 }

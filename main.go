@@ -1,9 +1,8 @@
 package main
 
-import (
-	"fmt"
-)
+import "gamesensegaming.com/api"
 
 func main() {
-	fmt.Println("Hello world")
+	api.GetAccountInfoBySummonerName("SUMMONERNAME")
+	api.GetSummonerByPuuid("PUUID")
 }
